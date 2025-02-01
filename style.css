@@ -1,0 +1,888 @@
+/* styles.css */
+:root {
+    --primary-color: #333;
+    --secondary-color: #ffd798;
+    --text-color: #333;
+    --bg-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(22, 12, 12, 0.796);
+    backdrop-filter: blur (15px);
+}
+
+.nav-left {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo {
+    height: 50px;
+}
+
+.contact-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+/* Hero Section Styles */
+.hero {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assets/bg\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 4rem 2rem;
+    color: var(--bg-color);
+}
+
+.hero-left {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.find-house-btn {
+    padding: 1rem 2rem;
+    background-color: #ffd798;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Property Card Styles */
+.property-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 400px;
+}
+
+.property-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.property-info {
+    padding: 1rem;
+    position: relative;
+}
+
+.property-address {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.property-time {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.arrow-btn {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background: none;
+    border: none;
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 1rem;
+}
+
+.search-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.search-item:last-of-type {
+    border-right: none;
+}
+
+.search-item span {
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.search-item input {
+    background: none;
+    border: none;
+    color: var(--bg-color);
+    font-size: 1rem;
+    width: 150px;
+    padding: 6px;
+}
+
+.search-item input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-btn {
+    padding: 0.5rem 2rem;
+    background-color:#ffd798;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/* styles.css */
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem;
+    background-color: #3e5744;
+    color: white;
+    min-height: 80vh;
+}
+
+/* Left Section Styles */
+.about-left {
+    padding-right: 2rem;
+}
+
+.section-number {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+
+}
+.stats-circles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: -40px; /* Memberikan tumpang tindih antar lingkaran */
+    margin-bottom: 3rem;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #556b2f; /* Ganti dengan warna sesuai tema */
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .circle-customers {
+    background-color: transparent;
+  }
+  
+  .circle-houses {
+    background-color: transparent;
+  }
+  
+  .circle .number {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .circle .label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: white;
+  }
+  
+
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Center Section Styles */
+.about-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Right Section Styles */
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.video-element {
+    width: 100%;
+    height: auto;
+    display: block;
+   
+}
+
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agents-container {
+    background-color: #4F7942;
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agents-content {
+    flex: 1;
+}
+
+.agents-content h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.find-agent-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.agents-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.agents-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section Styles */
+/* Section Title */
+.section-title-pop {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Popular Houses Section */
+.popular-houses {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem;
+    background-color: #eaeaea;
+}
+
+/* Houses Grid (Lebih Lebar) */
+.houses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Houses Grid (Sekarang Full Width) */
+.houses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px; /* Batas lebar */
+}
+
+/* House Card */
+.house-card {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.house-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* House Info */
+.house-info {
+    padding: 10px;
+}
+
+.house-info h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.house-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation Controls */
+.navigation-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    margin: 20px 120px;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow-left,
+.arrow-right {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Find House Button */
+.find-house {
+    padding: 10px 20px;
+    background-color: #4F7942;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Row 2: Description */
+.description {
+    text-align: center;
+    /* margin: 40px 0; */
+    padding: 0 20%;
+    background-color:#eaeaea ;
+}
+
+.description p{
+    font-size: 1.5rempx;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Row 3: Features Grid */
+.features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 60px 80px;
+    background-color: #eaeaea;
+}
+
+.features-left,
+.features-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.feature-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feature-box p{
+    font-size: 1rem;
+}
+
+.feature-box img {
+    width: 80px;
+    height: 80px;
+    background-color: #111;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.features-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section Styles */
+.testimonials {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+/* Header Styles */
+.testimonials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.section-title-testi {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navigation-arrows {
+    display: flex;
+    gap: 15px;
+}
+
+.arrow-left,
+.arrow-right {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background: #f5f5f5;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.quote-mark {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 3rem;
+    color: #ddd;
+    font-family: serif;
+    line-height: 1;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left Column */
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+.footer-left h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.description-footer {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.description-footer{
+    text-align: start;
+    margin: 30px 0;
+    /* padding: 0 20%; */
+    line-height: 1.6;
+    word-wrap: break-word;
+    width: 300px;
+    font-size: 0.9rem;
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.contact-info p{
+    font-size: 0.9rem;
+
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Center Column */
+.footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 200px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    margin-right: 200px;
+    margin-top: 80px;
+}
+
+/* Right Column */
+.footer-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.newsletter {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #4F7942;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #405f36;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.social-links a{
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4F7942;
+}
+
+/* Copyright Section */
+.copyright {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .newsletter {
+        justify-content: center;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+}
